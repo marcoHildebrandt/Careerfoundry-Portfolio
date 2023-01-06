@@ -110,7 +110,7 @@ button:focus,
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 20vh auto;
 }
 
 .profile__buttons {
@@ -144,7 +144,9 @@ button:focus,
   text-align: center;
   background-color: #fdfdfe;
   color: var(--secondary-color_1);
-  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .page-footer_section {
@@ -158,6 +160,11 @@ button:focus,
 .about-section__table {
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact-section {
+  margin-left: 20px;
+  margin-top: 40px;
 }
 
 .grid {
@@ -188,6 +195,24 @@ a:focus {
   font-size: 15px;
 }
 
+@media all and (max-width: 580px) {
+  .profile__portrait {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fe8317;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile {
+    max-width: 700px;
+    margin: 20px auto;
+  }
+}
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
@@ -208,10 +233,6 @@ a:focus {
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 22px;
   }
 
   .about-section__text {
@@ -273,4 +294,14 @@ a:focus {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.about-section_line {
+  border: 1px solid #fdfdfe;
+  margin-top: 40px;
+}
+
+.about-picture {
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
