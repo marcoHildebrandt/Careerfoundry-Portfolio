@@ -210,6 +210,10 @@ Secondary Colors:
     margin-right: auto;
   }
   
+  .contact-section {
+    margin-left: 20px;
+  }
+
   .grid {
     display: -ms-grid;
     display: grid;
