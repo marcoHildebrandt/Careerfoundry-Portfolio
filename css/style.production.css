@@ -4,6 +4,7 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 2 version
 */
+
 /*Colors
 Primary Colors:
 #021B29
@@ -14,6 +15,7 @@ Secondary Colors:
 #88A3B5
 #FE8317
 */
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -219,6 +221,7 @@ button:focus {
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  margin-bottom: 100px;
 }
 
 .grid__item {
@@ -227,6 +230,11 @@ button:focus {
   min-height: auto;
   padding: 10px;
   color: #023647;
+}
+
+.grid__item--pic {
+  border-radius: 10px;
+  width: 300px;
 }
 
 .grid__item--link {
@@ -261,21 +269,21 @@ a:focus {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 680px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 680px) and (max-width: 900px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (min-width: 750px) {
+@media all and (min-width: 900px) {
   .grid {
     grid-gap: 10px;
   }
@@ -294,9 +302,18 @@ a:focus {
 
 @media all and (min-width: 1500px) {
   .about-section__text {
-    width: 60vw;
+    width: 40vw;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  .grid__item--pic {
+    border-radius: 10px;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
   }
 }
 
